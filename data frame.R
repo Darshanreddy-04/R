@@ -8,6 +8,13 @@ summary(user)
 user$name
 user$user_location=c("banglore","ramanagara","mumbai","udipi")
 user
-user$ID
-user[2]
-user[["user_location"]]
+dim(user)
+user=rbind(user,c(4,"E","india"))
+user
+
+?cbind()
+user=cbind(user,"company"=c("hp","dell","victus","acer","lg"))
+user
+user=user[-c(2)]
+user
+length(user)
